@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size:  15px;
+    border: none;
+    outline: none;
+}
+
+body {
+    background:  hsl(0, 0%, 95%);
+    min-width: 375px;
+    max-width: 1440px;
+    font-size: 15px;                                                                                                          
+}
+
+main {
+    width: 100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container {
+    padding: 50px 0;
+}
+
+section {
+    padding: 44px;
+}
+
+.title {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 42px;
+    padding: 30px 0;
+    color:  hsl(0, 0%, 95%);
+}
+
+.infor {
+    width: 236px;
+    line-height: 25px;
+    margin-bottom: 25px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.sedans-area {
+    background: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+}
+
+.suvs-area {
+    background: hsl(184, 100%, 22%);
+}
+
+.luxury-area {
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 0 10px 10px;
+}
+
+.btnMore {
+    width: 100%;
+    text-align: center;
+}
+
+.btnMore button {
+    padding: 15px 30px;
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.sedans-area .btnMore button {
+    color:  hsl(31, 77%, 52%);
+}
+
+.sedans-area .btnMore button:hover {
+    background:  hsl(31, 77%, 52%);
+    color: #f2f2f2;
+}
+
+.suvs-area .btnMore button {
+    color:hsl(184, 100%, 22%) ;
+}
+
+.suvs-area .btnMore button:hover {
+    background:  hsl(184, 100%, 22%) ;
+    color: hsl(0, 0%, 95%);
+}
+
+.luxury-area .btnMore button {
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury-area .btnMore button:hover {
+    background:  hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+
+@media screen and (min-width:800px) {
+
+    .container {
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .sedans-area {
+        border-radius:10px 0 0 10px;
+    }
+    
+    .luxury-area {
+        border-radius: 0  10px 10px 0;
+    }
+}
